@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<ul>
+    {% for i in posts %}
+    <li>
+        <h2>{{i.title}}</h2>
+        <p>{{i.content}}</p>
+        <hr>
+    </li>
+    {% endfor%}
+</ul>
+
+{% endblock %}

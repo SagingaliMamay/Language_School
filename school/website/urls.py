@@ -7,6 +7,8 @@ from django.core.mail import send_mail
 urlpatterns = [
     path('', index, name='index'),
     path('details/', details, name='details'),
-    path('content/', content, name= 'content'),
+    path('content/', content, name='content'),
     path('level/', level, name='level'),
+    path('about/', about, name='about'),
+    path('articles/', article)
 ]
