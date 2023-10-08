@@ -32,3 +32,18 @@ def article(request):
     # Here I render all articles from db
     posts = Article.objects.all()
     return render(request, 'article.html', {'posts': posts})
+
+# Add Page/articles
+
+def addpage(request):
+    return render(request,'addpage.html',{})
+
+
+# Contact
+
+def contact(request):
+    return render(request,'contact.html',{})
+
+
+def login(request):
+    return render(request,'login.html',{})
