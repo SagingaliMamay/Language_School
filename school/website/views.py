@@ -23,7 +23,7 @@ def level(request):
 # About us
 
 def about(request):
-    return render(request, 'level.html', {})
+    return render(request, 'about.html', {})
 
 
 # Articles

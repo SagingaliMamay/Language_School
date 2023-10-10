@@ -12,7 +12,9 @@
     {% for i in posts %}
     <li>
         <h2>{{i.title}}</h2>
+        {% autoescape off %}
         <p>{{i.content|linebreaks|truncatewords:50}}</p>
+        {% endautoescape off %}
         <div class="clear"></div>
         <p class="link-read-post"><a href="#">Read</a></p>
         <hr>
