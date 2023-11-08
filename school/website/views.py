@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404
 from .models import *
 
 
@@ -36,14 +37,28 @@ def article(request):
 # Add Page/articles
 
 def addpage(request):
-    return render(request,'addpage.html',{})
+    return HttpResponse("add page")
 
 
 # Contact
 
 def contact(request):
-    return render(request,'contact.html',{})
+    return HttpResponse('contact.html')
 
 
 def login(request):
-    return render(request,'login.html',{})
+    return HttpResponse('login.html')
+
+# to show post by clickin on "read" button
+
+
+def show_post(request, post_slug):
+    post = get_object_or_404(Article, slug=post_slug)
+
+    context = {
+        'post' : post,
+        #'menu' : menu,
+        'title': post.title,
+        'cat_selected' : post.cat_id,
+    }
+    return render(request, 'post.html', context=context)

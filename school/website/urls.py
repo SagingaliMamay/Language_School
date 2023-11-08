@@ -14,4 +14,5 @@ urlpatterns = [
     path('addpage/', addpage, name='addpage'),
     path('login/', login, name='login'),
     path('contact', contact, name='contact'),
+    path('post/<slug:post_slug>/', show_post, name='post')
 ]
