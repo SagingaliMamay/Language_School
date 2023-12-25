@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <br>
 <br>
 <br>
@@ -9,7 +11,7 @@
 <h1>{{post.title}}</h1>
 
 {% if post.photo %}
-<p><img src="{{post.photo.url}}"  class="img-article-left"></p>
+<p><img src="{{post.photo.url}}"  class="img-article-left" style="width:100%"></p>
 {% endif %}
 
 {{post.content|linebreaks}}

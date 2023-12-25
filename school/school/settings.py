@@ -13,6 +13,17 @@ SECRET_KEY = 'django-insecure-f90#4z8u6@pf+tnj$who!%=ob*-=2&^a2!)*&v)(=+2@n8nbs)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Email sendings from contact form
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = 'sagingali.mamayev@gmail.com'
+EMAIL_HOST_PASSWORD = 'Al@n2018'
+EMAIL_PORT = '587'
+
+
 ALLOWED_HOSTS = []
 
 # Application definition

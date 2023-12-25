@@ -1,0 +1,10 @@
+1 Logo
+2 video
+3 photos
+4 products section & button(-->contact page) with product name(-->dropdown menu)
+5 youtube, insta,tg
+6 online payments
+7 reservations 
+8 product name :
+9 rassylka
+

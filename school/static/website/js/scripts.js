@@ -1,7 +1,5 @@
-/* Template: Corso - Free Training Course Landing Page Template
-   Author: Inovatik
-   Created: Nov 2019
-   Description: Custom JS file
+/* Template: Deutch First - Free Training Course Landing Page Template
+
 */
 
 
@@ -212,7 +210,7 @@
         
         $.ajax({
             type: "POST",
-            url: "php/registrationform-process.php",
+            url: "{% url 'index.html' %}",
             data: "name=" + name + "&email=" + email + "&phone=" + phone + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
@@ -266,7 +264,7 @@
         var terms = $("#nterms").val();
         $.ajax({
             type: "POST",
-            url: "php/newsletterform-process.php",
+            url: "{% url 'home' %}",
             data: "email=" + email + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
@@ -322,7 +320,7 @@
         var terms = $("#cterms").val();
         $.ajax({
             type: "POST",
-            url: "php/contactform-process.php",
+            url: "index.html",
             data: "name=" + name + "&email=" + email + "&message=" + message + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
@@ -380,7 +378,7 @@
         
         $.ajax({
             type: "POST",
-            url: "php/privacyform-process.php",
+            url: "{% url 'index.html' %}",
             data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {

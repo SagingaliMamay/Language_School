@@ -1,12 +1,24 @@
 from django.http import HttpResponse
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import *
+from django.core.mail import send_mail,BadHeaderError
+from .forms import ContactForm
+
+
 
 
 # Home page
 
 def index(request):
-    return render(request, 'index.html', {})
+    if request.method =='POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            print("the form is send")
+            return render ('index.html')
+
+    else:
+        form = ContactForm
+    return render(request, 'index.html', {'form': form})
 
 
 def details(request):
@@ -43,7 +55,16 @@ def addpage(request):
 # Contact
 
 def contact(request):
-    return HttpResponse('contact.html')
+    if request.method == 'POST':
+        cname = request.POST['cname']
+        cemail = request.POST['cemail']
+        cmessage = request.POST['cmessage']
+
+        return render(request,'base.html',{'cmessage':cmessage,'cemail':cemail,'cname':cname})
+
+
+    else:
+        return HttpResponse('base.html')
 
 
 def login(request):

@@ -1,4 +1,4 @@
-/* Template: Corso - Free Training Course Landing Page Template
+/* Template: Deutch First - Free Training Course Landing Page Template
    Author: Inovatik
    Created: Nov 2019
    Description: Master CSS file
@@ -2198,6 +2198,14 @@ a:hover.back-to-top {
 	.ex-basic-2 .image-container-small {
 		margin-left: 1.75rem;
 	}
+
 	/* end of extra pages */
+
+	/*logo*/
+
+	#logo {
+            max-width: 50%;
+            height: auto;
+        }
 }
 /* end of min-width width 1200px */
