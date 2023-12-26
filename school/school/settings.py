@@ -24,7 +24,7 @@ EMAIL_HOST_PASSWORD = 'Al@n2018'
 EMAIL_PORT = '587'
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['yblingua.com']
 
 # Application definition
 
