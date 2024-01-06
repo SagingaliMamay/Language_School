@@ -3,10 +3,55 @@
 
 {% block content %}
 
- <h1> About us </h1>
-<p>Lorem <ipsum> Welcome to [Your Language School Name]
 
-At [Your Language School Name], we believe that language is the key to unlocking new opportunities, bridging cultures, and expanding horizons. With a passion for language learning and a commitment to excellence, we have been helping students achieve their language goals for [Number of Years in Business] years.
+<br>
+<br>
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Article</title>
+    <style>
+
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+
+
+
+
+
+        <p>At [Your Language School Name], we believe that language is the key to unlocking new opportunities, bridging cultures, and expanding horizons. With a passion for language learning and a commitment to excellence, we have been helping students achieve their language goals for [Number of Years in Business] years.
 
 Our Mission
 
@@ -22,22 +67,15 @@ Small Class Sizes: We keep our class sizes small to ensure personalized attentio
 
 Flexible Scheduling: Life is busy, and we understand that. That's why we offer flexible scheduling options to fit your lifestyle. Whether you prefer morning, afternoon, or evening classes, we have options for you.
 
-Multicultural Community: [Your Language School Name] is more than just a school; it's a diverse and inclusive community. Here, you'll not only learn a new language but also connect with people from different backgrounds and cultures.
+</p>
 
-Our Programs
+        <img src="{% static 'website/images/julia_1.jpg' %}" alt="Example Image">
 
-We offer a range of language programs tailored to meet your specific goals, whether you're learning for travel, business, academics, or personal enrichment. Our courses cover all proficiency levels, from beginner to advanced, and are designed to build your language skills systematically.
+        <!-- More content goes here -->
 
-Join Us Today
+    </div>
+</body>
+</html>
 
-Embark on your language learning journey with [Your Language School Name]. Whether you're looking to enhance your career prospects, explore new cultures, or simply challenge yourself, we're here to support you every step of the way.
 
-We invite you to explore our courses, meet our passionate instructors, and join our vibrant language-learning community. Let's embark on this exciting adventure together.
-
-[Contact Information]
-
-We look forward to welcoming you to [Your Language School Name]!
-
-Feel free to customize this text to better match your language school's unique mission, values, and offerings.
-</ipsum></p>
 {% endblock %}

@@ -637,14 +637,14 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 50.5625rem;
-	height: 1.875rem;
+    width: 100%;
+	height: auto;
 }
 
 .navbar-custom .navbar-brand.logo-text {
 	font: italic 600 2rem/1.5rem "Montserrat", sans-serif;
 	color: #ffbd50;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .navbar-custom .navbar-nav {
@@ -2196,6 +2196,28 @@ a:hover.back-to-top {
 
 	/* end of extra pages */
 
+
+    /* Articles section */
+
+    .article-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.article {
+    margin: 0;
+}
+
+.article-title {
+    color: #333;
+}
+
+.article-content {
+    color: #555;
+}
 
 }
 /* end of min-width width 1200px */
